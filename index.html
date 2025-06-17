@@ -1,27 +1,33 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>PsiBem - Saúde Mental</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/img/psibi.png" type="image/png" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+
 </head>
+
 <body>
   <button class="help-button" onclick="document.getElementById('modal').style.display='block'">?</button>
 
- <div id="modal" class="modal" onclick="event.target === this && (this.style.display='none')">
-  <div class="modal-content">
-    <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
-    
+  <div id="modal" class="modal" onclick="event.target === this && (this.style.display='none')">
+    <div class="modal-content">
+      <span class="close" onclick="document.getElementById('modal').style.display='none'">&times;</span>
 
-    <img class="modal-logo" src="assets/img/psibi.png" alt="Logo do PsiBem" />
 
-    <h2>Dúvidas Frequentes</h2>
-    <p>📦 O arquivo <strong>.APK</strong> pode ser identificado como suspeito por alguns navegadores ou antivírus. Isso é comum para apps que ainda não estão na Play Store.</p>
-    <p>✅ Fique tranquilo(a)! O PsiBem é seguro e livre de vírus.</p>
-    <p>📱 <strong>Compatível apenas com dispositivos Android.</strong></p>
+      <img class="modal-logo" src="assets/img/psibi.png" alt="Logo do PsiBem" />
+
+      <h2>Dúvidas Frequentes</h2>
+      <p>📦 O arquivo <strong>.APK</strong> pode ser identificado como suspeito por alguns navegadores ou antivírus.
+        Isso é comum para apps que ainda não estão na Play Store.</p>
+      <p>✅ Fique tranquilo(a)! O PsiBem é seguro e livre de vírus.</p>
+      <p>📱 <strong>Compatível apenas com dispositivos Android.</strong></p>
+    </div>
   </div>
-</div>
 
 
   <main class="container">
@@ -34,22 +40,19 @@
     <p>Seu app de apoio à saúde mental.</p>
     <p><strong>Teste gratuitamente clicando no link abaixo:</strong></p>
 
-    <a class="button" href="https://drive.google.com/uc?export=download&id=1zb2Ocrn_dVmanURLzzZUN5ER0fNxex3g" target="_blank">
+    <a class="button" href="https://drive.google.com/uc?export=download&id=1zb2Ocrn_dVmanURLzzZUN5ER0fNxex3g"
+      target="_blank">
       📦 Baixar App PsiBem (APK)
     </a>
 
     <p class="support-note">* Disponível somente para Android.</p>
-    
 
-    <section class="feedback">
-      <p>Gostou do app? Que tal nos avaliar?</p> 
-      <p><strong>Sua opinião é importante para nós!</strong></p>
-      <a href="https://forms.gle/8t9jLFJv9PoE2wiq8" target="_blank">
-        📋 Formulário de Usabilidade
-      </a>
-    </section>
 
-    <a class="button secondary" href="sobre.html">Conheça o PsiBem >></a>
+    <div class="button-group">
+      <a class="button alt" href="https://forms.gle/8t9jLFJv9PoE2wiq8" target="_blank">📋 Avaliar App</a>
+      <a class="button alt" href="sobre.html">💡 Sobre o PsiBem</a>
+    </div>
+
 
   </main>
 
@@ -62,4 +65,5 @@
     });
   </script>
 </body>
+
 </html>
